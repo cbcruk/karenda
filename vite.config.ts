@@ -7,6 +7,6 @@ export default defineConfig(({ mode }) => {
 
   return {
     plugins: [react()],
-    base: env.NODE_ENV === 'production' ? 'kurokku' : '',
+    base: env.NODE_ENV === 'production' ? 'karenda' : '',
   }
 })
