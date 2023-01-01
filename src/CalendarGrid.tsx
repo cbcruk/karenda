@@ -13,7 +13,10 @@ export function CalendarGrid({ state, ...props }: Props) {
   const weeksInMonth = getWeeksInMonth(state.visibleRange.start, locale)
 
   return (
-    <table {...gridProps} className="w-full h-half aspect-[16/9]">
+    <table
+      {...gridProps}
+      className="w-full h-half aspect-square md:aspect-[16/9]"
+    >
       <thead hidden {...headerProps}>
         <tr>
           {weekDays.map((day, index) => (
