@@ -1,0 +1,7 @@
+.button {
+  @apply flex w-[40%] aspect-square items-center justify-center rounded-2xl m-auto text-xl font-medium pointer-events-none;
+}
+
+.button[data-is-today='true'] {
+  @apply bg-rose-700 text-[#babcbb] font-black;
+}
